@@ -2,7 +2,8 @@ import Image from "./Image";
 const Body = () => {
   return (
     <div className="grid grid-cols-2 mx-auto bg-slate-900 font-my-font">
-      <div></div>
+      <div>
+      </div>
       <div className="text-left">
         <p className="text-7xl text-white">Hello, I am Abhinav</p>
         <p className="text-7xl text-white">A web developer</p>

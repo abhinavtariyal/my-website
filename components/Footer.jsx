@@ -4,7 +4,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 const Footer = () => {
   return (
-    <div className="grid grid-cols-7 text-center mt-96 bg-black p-14 rounded-md">
+    <div className="grid grid-cols-7 text-center mt-96 bg-black p-10 rounded-md shadow-2xl">
       <div className="col-start-3">
         <Link
           href="https://www.linkedin.com/in/abhinav-tariyal"
