@@ -11,6 +11,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
+        'my-font':['Merriweather'],
+        'logo-font':['Agdasima']
       }
     },
   },
