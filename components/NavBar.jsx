@@ -11,7 +11,7 @@ const NavBar = () => {
         </div>
         <div className="grid grid-cols-5 p-10">
           <li className="list-none text-lg font-bold hover:text-white col-start-3 transition ease-in-out hover:translate-x-1 duration-100">
-            <Link href="/">Home</Link>
+            <Link href="/" >Home</Link>
           </li>
           <li className="list-none text-lg font-bold hover:text-white transition ease-in-out hover:translate-x-1 -ml-4">
             <Link href="/experience">Experience</Link>

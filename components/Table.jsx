@@ -14,6 +14,7 @@ import Paper from "@mui/material/Paper";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
+
 function createData(name, title, history) {
   return {
     name,
@@ -28,7 +29,7 @@ function Row(props) {
 
   return (
     <React.Fragment>
-      <TableRow sx={{ "& > *": { borderBottom: "unset" } }}>
+      <TableRow sx={{ "& > *": { borderBottom: "unset"} }}>
         <TableCell>
           <IconButton
             aria-label="expand row"
@@ -38,13 +39,13 @@ function Row(props) {
             {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
           </IconButton>
         </TableCell>
-        <TableCell component="th" scope="row">
+        <TableCell component="th" scope="row" className="font-semibold">
           {row.name}
         </TableCell>
-        <TableCell align="center">{row.title}</TableCell>
+        <TableCell align="center" className="font-semibold">{row.title} </TableCell>
       </TableRow>
       <TableRow>
-        <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
+        <TableCell className="pb-0 pt-0 bg-slate-800 text-white" colSpan={6}>
           <Collapse in={open} timeout="auto" unmountOnExit>
             <Box sx={{ margin: 1 }}>
               <Typography variant="h6" gutterBottom component="div">
@@ -53,20 +54,20 @@ function Row(props) {
               <Table size="small" aria-label="purchases">
                 <TableHead>
                   <TableRow>
-                    <TableCell>Date</TableCell>
-                    <TableCell align="center">Key Responsibilties</TableCell>
+                    <TableCell className="text-white">Date</TableCell>
+                    <TableCell className="text-white" align="center">Key Responsibilties</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
                   {row.history.map((historyRow) => (
-                    <TableRow key={historyRow.date}>
-                      <TableCell component="th" scope="row">
+                    <TableRow key={historyRow.date} >
+                      <TableCell component="th" scope="row" className="text-white">
                         {historyRow.date}
                       </TableCell>
                       <TableCell>
                         {historyRow.responsibilties.map(
                           (responsibility, index) => (
-                            <li key={index}>{responsibility}</li>
+                            <li className="text-white" key={index}>{responsibility}</li>
                           )
                         )}
                       </TableCell>
@@ -145,8 +146,8 @@ export default function CollapsibleTable() {
         <TableHead>
           <TableRow>
             <TableCell />
-            <TableCell>Company Name</TableCell>
-            <TableCell align="center">Job Title</TableCell>
+            <TableCell className="font-bold">Company Name</TableCell>
+            <TableCell className="font-bold" align="center">Job Title</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
