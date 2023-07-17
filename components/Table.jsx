@@ -53,9 +53,9 @@ function Row(props) {
               </Typography>
               <Table size="small" aria-label="purchases">
                 <TableHead>
-                  <TableRow>
-                    <TableCell className="text-white">Date</TableCell>
-                    <TableCell className="text-white" align="center">Key Responsibilties</TableCell>
+                  <TableRow className="text-white">
+                    <TableCell >Date</TableCell>
+                    <TableCell  align="center">Key Responsibilties</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
