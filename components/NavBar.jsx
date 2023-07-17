@@ -13,7 +13,7 @@ const NavBar = () => {
           <li className="list-none text-lg font-bold hover:text-white col-start-3 transition ease-in-out hover:translate-x-1 duration-100">
             <Link href="/">Home</Link>
           </li>
-          <li className="list-none text-lg font-bold hover:text-white transition ease-in-out hover:translate-x-1">
+          <li className="list-none text-lg font-bold hover:text-white transition ease-in-out hover:translate-x-1 -ml-4">
             <Link href="/experience">Experience</Link>
           </li>
           <li className="list-none text-lg font-bold hover:text-white transition ease-in-out hover:translate-x-1">
