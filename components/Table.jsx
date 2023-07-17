@@ -45,7 +45,7 @@ function Row(props) {
         <TableCell align="center" className="font-semibold">{row.title} </TableCell>
       </TableRow>
       <TableRow>
-        <TableCell className="pb-0 pt-0 bg-slate-800 " colSpan={6}>
+        <TableCell className="pb-0 pt-0 bg-slate-800 m-0" colSpan={6}>
           <Collapse in={open} timeout="auto" unmountOnExit>
             <Box sx={{ margin: 1 }}>
               <Typography gutterBottom component="div" className="text-white">
