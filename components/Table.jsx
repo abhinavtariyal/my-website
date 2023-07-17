@@ -45,10 +45,10 @@ function Row(props) {
         <TableCell align="center" className="font-semibold">{row.title} </TableCell>
       </TableRow>
       <TableRow>
-        <TableCell className="pb-0 pt-0 bg-slate-800 text-white" colSpan={6}>
+        <TableCell className="pb-0 pt-0 bg-slate-800 " colSpan={6}>
           <Collapse in={open} timeout="auto" unmountOnExit>
             <Box sx={{ margin: 1 }}>
-              <Typography variant="h6" gutterBottom component="div">
+              <Typography gutterBottom component="div" className="text-white">
                 History
               </Typography>
               <Table size="small" aria-label="purchases">
