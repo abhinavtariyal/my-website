@@ -63,7 +63,13 @@ function Row(props) {
                       <TableCell component="th" scope="row">
                         {historyRow.date}
                       </TableCell>
-                      <TableCell>{historyRow.responsibilties.map(responsibility => <li>{responsibility}</li>)}</TableCell>
+                      <TableCell>
+                        {historyRow.responsibilties.map(
+                          (responsibility, index) => (
+                            <li key={index}>{responsibility}</li>
+                          )
+                        )}
+                      </TableCell>
                     </TableRow>
                   ))}
                 </TableBody>
