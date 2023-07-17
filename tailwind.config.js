@@ -1,20 +1,18 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
- 
-    // Or if using `src` directory:
-    "./src/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
-  theme: {
-    extend: {
-      fontFamily:{
-        'my-font':['Merriweather'],
-        'logo-font':['Agdasima']
-      }
-    },
+export const content = [
+  "./app/**/*.{js,ts,jsx,tsx,mdx}",
+  "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+  "./components/**/*.{js,ts,jsx,tsx,mdx}",
+
+  // Or if using `src` directory:
+  "./src/**/*.{js,ts,jsx,tsx,mdx}",
+];
+export const theme = {
+  extend: {
+    fontFamily: {
+      'my-font': ['Merriweather'],
+      'logo-font': ['Agdasima']
+    }
   },
-  plugins: [],
-}
+};
+export const plugins = [];

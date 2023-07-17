@@ -51,11 +51,11 @@ function Row(props) {
               <Typography gutterBottom component="div" className="text-white">
                 History
               </Typography>
-              <Table size="small" aria-label="purchases">
+              <Table size="small" aria-label="purchases" className="text-white">
                 <TableHead>
-                  <TableRow className="text-white">
-                    <TableCell >Date</TableCell>
-                    <TableCell  align="center">Key Responsibilties</TableCell>
+                  <TableRow >
+                    <TableCell className="text-white">Date</TableCell>
+                    <TableCell  align="center" className="text-white">Key Responsibilties</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
