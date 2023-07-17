@@ -1,5 +1,6 @@
-function About(){
-return<h1>This is About page</h1>
+
+function About() {
+  return <h1>This is about scetion</h1>;
 }
 
 export default About;
