@@ -45,29 +45,29 @@ function Row(props) {
         <TableCell align="center" className="font-semibold">{row.title} </TableCell>
       </TableRow>
       <TableRow>
-        <TableCell className="pb-0 pt-0 bg-slate-800 m-0" colSpan={6}>
+        <TableCell className="pb-0 pt-0 m-0" colSpan={6}>
           <Collapse in={open} timeout="auto" unmountOnExit>
             <Box sx={{ margin: 1 }}>
-              <Typography gutterBottom component="div" className="text-white">
+              <Typography gutterBottom component="div" >
                 History
               </Typography>
-              <Table size="small" aria-label="purchases" className="text-white">
+              <Table size="small" aria-label="purchases" >
                 <TableHead>
                   <TableRow >
-                    <TableCell className="text-white">Date</TableCell>
-                    <TableCell  align="center" className="text-white">Key Responsibilties</TableCell>
+                    <TableCell>Date</TableCell>
+                    <TableCell  align="center" >Key Responsibilties</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
                   {row.history.map((historyRow) => (
                     <TableRow key={historyRow.date} >
-                      <TableCell component="th" scope="row" className="text-white">
+                      <TableCell component="th" scope="row">
                         {historyRow.date}
                       </TableCell>
                       <TableCell>
                         {historyRow.responsibilties.map(
                           (responsibility, index) => (
-                            <li className="text-white" key={index}>{responsibility}</li>
+                            <li key={index}>{responsibility}</li>
                           )
                         )}
                       </TableCell>
