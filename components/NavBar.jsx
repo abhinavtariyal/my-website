@@ -11,7 +11,7 @@ const NavBar = () => {
             Abhinav T.
           </div>
         </div>
-        <div className="grid grid-cols-5 justify-items-center">
+        <div className="grid grid-cols-5 justify-items-center p-5">
           <li className="list-none hover:text-white col-start-3 transition ease-in-out hover:translate-x-1 duration-100 ">
             <Link href="/">
               <AiFillHome size={"28"} />
@@ -22,7 +22,7 @@ const NavBar = () => {
           </li>
           <li className="list-none text-lg font-bold hover:text-white transition ease-in-out hover:translate-x-1">
             <Link href="/AbhinavTariyal.pdf" download="AbhinavTariyal.pdf">
-              <BsDownload size={"28"} />
+              <BsDownload size={"26"} />
             </Link>
           </li>
         </div>

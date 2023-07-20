@@ -46,29 +46,29 @@ function Row(props) {
         </TableCell>
       </TableRow>
       <TableRow>
-        <TableCell className="pb-0 pt-0 m-0" colSpan={6}>
+        <TableCell className="pb-0 pt-0 m-0 bg-slate-800 text-white" colSpan={6}>
           <Collapse in={open} timeout="auto" unmountOnExit>
-            <Box sx={{ margin: 1 }}>
+            <Box sx={{ margin: 1 }} >
               <Typography gutterBottom component="div">
                 History
               </Typography>
-              <Table size="small" aria-label="purchases">
+              <Table size="small" aria-label="purchases" >
                 <TableHead>
                   <TableRow>
-                    <TableCell>Date</TableCell>
-                    <TableCell align="center">Key Responsibilties</TableCell>
+                    <TableCell className="text-white">Date</TableCell>
+                    <TableCell align="center" className="text-white">Key Responsibilties</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
                   {row.history.map((historyRow) => (
                     <TableRow key={historyRow.date}>
-                      <TableCell component="th" scope="row">
+                      <TableCell component="th" scope="row" className="text-white">
                         {historyRow.date}
                       </TableCell>
                       <TableCell>
                         {historyRow.responsibilties.map(
                           (responsibility, index) => (
-                            <li key={index}>{responsibility}</li>
+                            <li key={index} className="text-white">{responsibility}</li>
                           )
                         )}
                       </TableCell>
@@ -156,12 +156,12 @@ const rows = [
 
 export default function CollapsibleTable() {
   return (
-    <TableContainer component={Paper}>
+    <TableContainer component={Paper} className="w-auto">
       <Table aria-label="collapsible table">
         <TableHead>
           <TableRow>
             <TableCell />
-            <TableCell className="font-bold">Company Name</TableCell>
+            <TableCell className="font-bold ">Company Name</TableCell>
             <TableCell className="font-bold" align="center">
               Job Title
             </TableCell>
