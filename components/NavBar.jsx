@@ -21,7 +21,7 @@ const NavBar = () => {
             <Link href="/experience">Experience</Link>
           </li>
           <li className="list-none text-lg font-bold hover:text-white transition ease-in-out hover:translate-x-1">
-            <Link href="/AbhinavTariyal.pdf" download="AbhinavTariyal.pdf">
+            <Link href="/Abhinav_Tariyal.pdf" download="Abhinav_Tariyal.pdf">
               <BsDownload size={"26"} />
             </Link>
           </li>
