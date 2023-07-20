@@ -12,7 +12,7 @@ const NavBar = () => {
           </div>
         </div>
         <div className="grid grid-cols-5 justify-items-center">
-          <li className="list-none hover:text-white col-start-3 transition ease-in-out hover:translate-x-1 duration-100 shadow-lg h-12 w-12  rounded-3xl">
+          <li className="list-none hover:text-white col-start-3 transition ease-in-out hover:translate-x-1 duration-100 ">
             <Link href="/">
               <AiFillHome size={"28"} />
             </Link>

@@ -14,7 +14,6 @@ import Paper from "@mui/material/Paper";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
-
 function createData(name, title, history) {
   return {
     name,
@@ -29,7 +28,7 @@ function Row(props) {
 
   return (
     <React.Fragment>
-      <TableRow sx={{ "& > *": { borderBottom: "unset"} }}>
+      <TableRow sx={{ "& > *": { borderBottom: "unset" } }}>
         <TableCell>
           <IconButton
             aria-label="expand row"
@@ -42,25 +41,27 @@ function Row(props) {
         <TableCell component="th" scope="row" className="font-semibold">
           {row.name}
         </TableCell>
-        <TableCell align="center" className="font-semibold">{row.title} </TableCell>
+        <TableCell align="center" className="font-semibold">
+          {row.title}{" "}
+        </TableCell>
       </TableRow>
       <TableRow>
         <TableCell className="pb-0 pt-0 m-0" colSpan={6}>
           <Collapse in={open} timeout="auto" unmountOnExit>
             <Box sx={{ margin: 1 }}>
-              <Typography gutterBottom component="div" >
+              <Typography gutterBottom component="div">
                 History
               </Typography>
-              <Table size="small" aria-label="purchases" >
+              <Table size="small" aria-label="purchases">
                 <TableHead>
-                  <TableRow >
+                  <TableRow>
                     <TableCell>Date</TableCell>
-                    <TableCell  align="center" >Key Responsibilties</TableCell>
+                    <TableCell align="center">Key Responsibilties</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
                   {row.history.map((historyRow) => (
-                    <TableRow key={historyRow.date} >
+                    <TableRow key={historyRow.date}>
                       <TableCell component="th" scope="row">
                         {historyRow.date}
                       </TableCell>
@@ -123,17 +124,31 @@ const rows = [
         "Participate in software development life cycle activities such as requirement analysis, design, and implementation. ",
         "Stay updated with the latest industry trends and technologies. ",
         "Conduct code reviews and provide constructive feedback to team members.",
-         "Successfully reduced the response time of the application to be loaded by 30% and improved overall performance and interactivity of the application. ",
+        "Successfully reduced the response time of the application to be loaded by 30% and improved overall performance and interactivity of the application. ",
         "Ensure that the website is fully responsive and works well on different mobile devices. ",
         "Achieved a score of 90+ on Google's Mobile-Friendly Test .",
-        "Improve search engine ranking: Implement SEO strategies to enhance the website's visibility in search engine results. ", 
+        "Improve search engine ranking: Implement SEO strategies to enhance the website's visibility in search engine results. ",
         "Achieved a 20% increase in organic search traffic .",
-        "Implement measures to minimize website downtime and ensure maximum uptime.", 
+        "Implement measures to minimize website downtime and ensure maximum uptime.",
         "Achieved 99.9% uptime of the website for a year .",
-        "Collaborate with cross-functional teams to gather and analyze user requirements. ", 
+        "Collaborate with cross-functional teams to gather and analyze user requirements. ",
         "Participate in software development life cycle activities such as requirement analysis, design, and implementation. ",
         "Develop and maintain software applications using various programming languages and technologies like Node.js, React.js, Java and React Native. ",
         "Conduct testing and debugging of software applications to ensure functionality and identify any defects or issues with JEST and Jasmine. ",
+      ],
+    },
+  ]),
+  createData("Infosys", "Software Engineer", [
+    {
+      date: "October 2018 - December 2019",
+      responsibilties: [
+        "Implementing software enhancements and new features based on user feedback and business requirements.",
+        " Participating in code reviews to ensure adherence to coding standards and best practices",
+        "Developing and maintaining software documentation, including design documents, user manuals, and technical guides",
+        "Collaborating with cross-functional teams to gather and analyze user requirements and translate them into technical specifications",
+        "Designing, coding, testing, and debugging software applications using programming languages such as Java, C++, or Python",
+        "Collaborating with product managers and stakeholders to define and prioritize software development tasks",
+        "Troubleshooting and resolving software defects and issues reported by users or quality assurance teams",
       ],
     },
   ]),
@@ -147,7 +162,9 @@ export default function CollapsibleTable() {
           <TableRow>
             <TableCell />
             <TableCell className="font-bold">Company Name</TableCell>
-            <TableCell className="font-bold" align="center">Job Title</TableCell>
+            <TableCell className="font-bold" align="center">
+              Job Title
+            </TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
